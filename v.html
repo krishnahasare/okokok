@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, V!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* background: linear-gradient(to right, #ff758c, #ff7eb3); */
+            background: url(./IMG-20241227-WA0123.jpg) no-repeat center center/cover;
+            
+            font-family: "Montserrat", serif;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(3px); 
+            z-index: -1; 
+            filter: brightness(80%);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .message-box {
+            width: 80%;
+            max-width: 700px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: left;
+            display: none;
+            max-height: 500px; /* Controls how much text is visible at once */
+            overflow-y: auto; /* Initially hides the scrollbar */
+            font-weight: 550;
+            /* position: relative; */
+    }
+
+/* Hide the scrollbar visually but allow scrolling */
+        .message-box::-webkit-scrollbar {
+            display: none;
+        }
+
+        .typing {
+            font-size: 1.2em;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            overflow: hidden;
+            border-right: 2px solid white;
+            padding-right: 5px;
+            animation: blinkCursor 0.8s infinite;
+        }
+        @keyframes blinkCursor {
+            50% { border-color: transparent; }
+        }
+        button {
+            background: white;
+            color: #ff758c;
+            font-size: 1.2em;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ffe4e9;
+            transform: translateY(-3px);
+        }
+        .hearts {
+    position: fixed; /* Covers entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction */
+    z-index: 5; /* Ensures hearts are above message */
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    clip-path: polygon(50% 15%, 80% 0, 100% 20%, 80% 40%, 50% 100%, 20% 40%, 0 20%, 20% 0);
+    opacity: 0.7;
+    animation: float 4s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) scale(0.8); opacity: 0.7; }
+    100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
+    </style>
+</head>
+<body>
+    <h1> Happy Valentine's Day, V! </h1>
+    <button onclick="showMessage()"><i class="fa-solid fa-heart"></i> Click to Open <i class="fa-solid fa-heart"></i></button>
+    
+    <div class="message-box" id="messageBox">
+        <p class="typing" id="typedText"></p>
+    </div>
+
+    <div class="hearts"></div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("messageBox").style.display = "block";
+            let message = `Vanshita, I genuinely don’t even know where to begin because every moment with you has been nothing short of magical. From the day we started dating on September 17, 2024, to now completing almost 5 months together, every single day with you has been filled with love, laughter, and countless unforgettable memories.
+
+But when I look back, it’s not just these last five months that make me feel this way. It’s been years of you being my person, my comfort, my safe space. There was a time when you were just a stranger to me, and now? You’re my favorite person, the closest to my heart, the one I can’t imagine my life without.
+
+I still remember writing to you back in 2022, before we even started dating, telling you how much you mean to me. I prayed for you to be in my life forever, and today, I feel so lucky that you are. Every moment with you has always been something I’ve cherished. I always knew you were important, but I never imagined we’d be here today, together, like this and I wouldn’t change a single thing.
+
+We’re together, officially, finally, and I couldn’t be happier. I still remember our call that day, how unreal it felt. We’ve always been 'us' & this will be forever.
+
+And brooo, how can I EVER get over our trips? Our time in Mumbai felt unreal, celebrating your birthday and then Ahmedabad? Broo pure magic <3!! just us, the long talks, the photos, the videos, every little thing. And OH MY GOD, your first kiss on my hand?? OMG The feeling of that moment, I still can’t even put into words. 
+
+And And And, the greatest feeling of all :))) the hug from behind & ofc the goodbye hug (which I never wa!ted to end)!! I swear, I still replay that moment in my head over and over. It was the best feeling. 
+
+Babyyy, your voice is my peace, your presence is my happiness, and you are my home. Every time we talk, every time I hear you, it feels like everything in the world is just right. And yeah, I get possessive. You are my everything.
+
+Vanshita, I promise to love you, cherish you, and be by your side forever. These 5 months are just the beginning of a lifetime together. You are my forever Valentine!
+
+I love you endlessly. Happy Valentine’s Day Baby!`;
+
+            let i = 0;
+            function type() {
+                if (i < message.length) {
+                    document.getElementById("typedText").innerHTML += message.charAt(i);
+                    i++;
+                    setTimeout(type, 10); 
+                }
+            }
+            type();
+        }
+
+        function createHearts() {
+    for (let i = 0; i < 10; i++) { // Keeps performance smooth
+        let heart = document.createElement("div");
+        heart.classList.add("heart");
+
+        // Random position: Left (0% - 100%) to cover full screen
+        heart.style.left = Math.random() * 100 + "vw";
+
+        // Random animation duration for variety
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+        // Append to hearts container (which now covers the whole page)
+        document.querySelector(".hearts").appendChild(heart);
+
+        // Remove after animation ends
+        setTimeout(() => { heart.remove(); }, 4000);
+    }
+}
+
+// Keep generating hearts infinitely
+setInterval(createHearts, 500);
+
+    </script>
+</body>
+</html>
